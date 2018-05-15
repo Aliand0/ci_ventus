@@ -23,7 +23,7 @@
             <div class="welcome text-center">
             <font color="black">
               <h1>VENTUS</h1>
-              <h2>Selamat Datang <br/> 
+              <h2> <strong>Selamat Datang <br/> 
               <strong>Post Event Kamu Sekarang</strong></h2>
               </font>
               <a class="btn btn-success btn-lg" href="/ci-ventus/index.php/admin/posts/add">Create Event</a>
