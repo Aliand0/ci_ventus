@@ -25,15 +25,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 
 	h1 {
-		color: #444;
+		color: #00241B;
 		background-color: transparent;
 		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
+		font-size: 25px;
 		font-weight: normal;
 		margin: 0 0 14px 0;
 		padding: 14px 15px 10px 15px;
 	}
 
+	h2 {
+		color: #65B891;
+		background-color: transparent;
+		border-bottom: 1px solid #D0D0D0;
+		font-size: 25px;
+		font-weight: normal;
+		margin: 0 0 14px 0;
+		padding: 14px 15px 10px 15px;
+	}
 	code {
 		font-family: Consolas, Monaco, Courier New, Courier, monospace;
 		font-size: 12px;

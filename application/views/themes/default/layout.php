@@ -71,9 +71,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
       $(window).scroll(function(){
         if ($(this).scrollTop() > 1){
-          $('.top-navbar').removeClass('navbar-transparent');
+          $('.top-navbar').removeClass('navbar');
         }else{
-          $('.top-navbar').addClass('navbar-transparent');
+          $('.top-navbar').addClass('navbar');
         }
       });
     </script>
