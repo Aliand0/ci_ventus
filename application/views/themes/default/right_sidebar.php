@@ -1,7 +1,7 @@
 
               <div class="widget default">
                 <div class="widget-title">
-                  
+                  <h3> Daftar Event </h3>
                 </div>
                 <div class="list-group">
                   <?php if(!empty($this->general->getRecentPosts())):?>
@@ -23,7 +23,7 @@
               </div>
               <div class="widget">
                 <div class="widget-title">
-                  
+                 <h3>Kategori Event </h3> 
                 </div>
                 <div class="widget-content list-menus">
                   <ul>
@@ -50,7 +50,7 @@
               </div> -->
               <div class="widget">
                 <div class="widget-title">
-                  
+                  <h3> Tags Event </h3>
                 </div>
                 <div class="widget-content list-menus">
                   <?php if(!empty($this->general->getTags())):?>
