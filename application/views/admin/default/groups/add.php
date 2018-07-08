@@ -3,7 +3,7 @@
 		 <!-- general form elements -->
         <div class="box box-primary">
             <div class="box-header">
-                <h3 class="box-title">New Group</h3>
+                <h3 class="box-title">Buat Grup</h3>
             </div><!-- /.box-header -->
             <!-- form start -->
             <form role="form" action="<?php echo site_url('admin/groups/add')?>" method="post">
@@ -20,8 +20,8 @@
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button> 
-                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Back</button>
+                    <button type="submit" class="btn btn-primary">Buat Grup</button> 
+                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Kembali</button>
                 </div>
             </form>
         </div><!-- /.box -->

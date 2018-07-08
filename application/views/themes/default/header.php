@@ -1,5 +1,3 @@
-
-<div class="navbar navbar-default navbar-fixed-top top-navbar navbar-transparent">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -23,15 +21,16 @@
             <div class="welcome text-center">
             <font color="black">
               <h1>VENTUS</h1>
-              <h2> <strong>Selamat Datang <br/> 
+              <div align="center">    
+              <div class="modal-content"  style="width: 250px" >
+              
+              <h2> <strong>SELAMAT DATANG <br/> 
               <strong>Post Event Kamu Sekarang</strong></h2>
+       
               </font>
-              <a class="btn btn-success btn-lg" href="/ci-ventus/index.php/admin/posts/add">Create Event</a>
+              <a class="btn btn-success btn-lg" href="/ci-ventus/index.php/admin/posts/add">Buat Event</a>
               
             </div>
           </div>
         </div>
       </section>
-
-      
-

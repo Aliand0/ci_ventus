@@ -3,7 +3,7 @@
          <!-- general form elements -->
         <div class="box box-primary">
             <div class="box-header">
-                <h3 class="box-title">Edit Page</h3>
+                <h3 class="box-title">Edit Halaman</h3>
             </div><!-- /.box-header -->
             <!-- form start -->
             <form role="form" action="<?php echo site_url('admin/pages/edit')?>" method="post">
@@ -11,15 +11,15 @@
                 <div class="box-body">
                     <?php echo message_box(validation_errors(),'danger'); ?>
                     <div class="form-group">
-                        <label for="post_name">Title</label>
+                        <label for="post_name">Judul</label>
                         <input type="text" name="title" class="form-control" id="post_name" placeholder="Title" value="<?php echo set_value('title', isset($page['title']) ? $page['title'] : '') ?>">
                     </div>
                     <div class="form-group">
-                        <label for="post_body">Body</label>
+                        <label for="post_body">Isi Halaman</label>
                         <textarea name="body" class="form-control txteditor" id="post_body" placeholder="Body" rows="10"><?php echo set_value('body', isset($page['body']) ? $page['body'] : '') ?></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="post_status">Featured Image</label>
+                        <label for="post_status">Gambar</label>
                         <input type="hidden" name="featured_image" value="<?php echo set_value('featured_image', isset($page['featured_image']) ? $page['featured_image'] : '') ?>" id="featured_image">
                         <div class="preview_featured_image">
                             <?php if(!empty($page['featured_image'])):?>
@@ -27,11 +27,11 @@
                             <?php endif;?>
                         </div>
                         <div class="set_featured_image">
-                            <a type="button" style="cursor:pointer" class="btnShowAssets" data-toggle="modal" data-target="#assetsModal">Set Featured Image</a>
+                            <a type="button" style="cursor:pointer" class="btnShowAssets" data-toggle="modal" data-target="#assetsModal">Upload Gambar</a>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="post_name">Publish Date</label>
+                        <label for="post_name">Tanggal Pembuatan</label>
                         <input type="text" name="published_at" class="form-control datepicker"  data-date-format="yyyy-mm-dd" id="post_name" placeholder="Publish Date" value="<?php echo set_value('published_at', isset($page['published_at']) ? $page['published_at'] : '') ?>">
                     </div>
                     <div class="form-group">
@@ -44,8 +44,8 @@
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button> 
-                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Back</button>
+                    <button type="submit" class="btn btn-primary">Edit Halaman</button> 
+                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Kembali</button>
                 </div>
             </form>
         </div><!-- /.box -->

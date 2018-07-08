@@ -1,26 +1,8 @@
 
               <div class="widget default">
                 <div class="widget-title">
-                  
-                </div>
-                <div class="list-group">
-                  <?php if(!empty($this->general->getRecentPosts())):?>
-                    <?php foreach ($this->general->getRecentPosts() as $post):?>
-                      <div class="list-group-item">
-                        <?php if(!empty($post['featured_image'])):?>
-                        <div class="row-picture">
-                            <img class="circle" src="<?php echo BASE_URI.$post['featured_image']?>" alt="icon">
-                        </div>
-                        <?php endif;?>
-                        <div class="row-content">
-                            <h4><a href="<?php echo site_url('read/'.$post['slug']) ?>"><?php echo $post['title'] ?></a></h4>
-                        </div>
-                      </div>
-                      <div class="list-group-separator"></div>
-                    <?php endforeach;?>
-                  <?php endif;?>
-                </div>
-              </div>
+        
+              <h3> KATEGORI EVENT </h3>
               <div class="widget">
                 <div class="widget-title">
                   
@@ -35,22 +17,10 @@
                   </ul>
                 </div>
               </div>
-              <!-- <div class="widget">
-                <div class="widget-title">
-                  <h3>Archives</h3>
-                </div>
-                <div class="widget-content list-menus">
-                  <ul>
-                    <li><a href="#">March, 2015</a></li>
-                    <li><a href="#">April, 2015</a></li>
-                    <li><a href="#">May, 2015</a></li> 
-                    <li><a href="#">June, 2015</a></li>
-                  </ul>
-                </div>
-              </div> -->
+          
               <div class="widget">
                 <div class="widget-title">
-                  
+                  <h3> Tags Event </h3>
                 </div>
                 <div class="widget-content list-menus">
                   <?php if(!empty($this->general->getTags())):?>

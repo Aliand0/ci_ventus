@@ -2,25 +2,25 @@
 	<div class="col-md-12">
 		<div class="box">
             <div class="box-header">
-                <h3 class="box-title">Categories</h3>
+                <h3 class="box-title">Kategori</h3>
             </div><!-- /.box-header -->
             <div class="box-body">
             	<?php echo $this->session->flashdata('message');?>
-            	<p><a class="btn btn-default" href="<?php echo site_url('admin/categories/add')?>">New Category</a></p>
+            	<p><a class="btn btn-default" href="<?php echo site_url('admin/categories/add')?>">Buat Kategori</a></p>
                 <table class="table table-bordered">
                     <tr>
-                        <th style="width: 10px">#</th>
+                       
                         <th>Name</th>
-                        <th>Slug</th>
+                        
                         <th>Status</th>
                         <th style="width: 100px">Action</th>
                     </tr>
                     <?php if(!empty($categories)):?>
                     	<?php foreach($categories as $category):?>
 		                    <tr>
-		                        <td><?php echo $category['id']?></td>
+		                        
 		                        <td><?php echo $category['name']?></td>
-		                        <td><?php echo $category['slug']?></td>
+		                        
 		                        <td><?php echo $category_status[$category['status']]?></td>
 		                        <td>
 		                        	<a href="<?php echo site_url('admin/categories/edit/'.$category['id'])?>"><span class="badge bg-green">edit</span></a>

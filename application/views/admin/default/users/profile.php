@@ -46,8 +46,8 @@
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button> 
-                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Back</button>
+                    <button type="submit" class="btn btn-primary">Edit Profile</button> 
+                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Kembali</button>
                 </div>
             <?php echo form_close();?>
         </div><!-- /.box -->

@@ -3,9 +3,10 @@
   <div class="panel panel-default"><!-- Post -->
       <?php if(!empty($post['featured_image'])):?>
       <div class="panel-img">
-        <img src="<?php echo BASE_URI.$post['featured_image']?>" alt="<?php echo $post['title'];?>"/>
+        <img src="<?php echo BASE_URI.$post['featured_image'] ?>" alt="<?php echo $post['title'];?>"/>
       </div>
       <?php endif;?>
+      
       <div class="panel-body content">
           <h2><a href="<?php echo site_url('read/'.$post['slug'])?>"><?php echo $post['title']?></a></h2>
           <?php echo word_limiter(strip_tags($post['body'],'<p><br>'),30)?>
@@ -20,3 +21,7 @@
   </div><!-- End Post -->
   <?php endforeach;?>
 <?php endif;?>
+
+
+
+

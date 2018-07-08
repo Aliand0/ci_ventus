@@ -3,48 +3,48 @@
 		 <!-- general form elements -->
         <div class="box box-primary">
             <div class="box-header">
-                <h3 class="box-title">New Event</h3>
+                <h3 class="box-title">Buat Event</h3>
             </div><!-- /.box-header -->
             <!-- form start -->
             <form role="form" action="<?php echo site_url('admin/posts/add')?>" method="post">
                 <div class="box-body">
                     <?php echo message_box(validation_errors(),'danger'); ?>
                     <div class="form-group">
-                        <label for="post_name">Title</label>
+                        <label for="post_name">Judul Event</label>
                         <input type="text" name="title" class="form-control" id="post_name" placeholder="Title" value="<?php echo set_value('title');?>">
                     </div>
                     <div class="form-group">
-                        <label for="post_body">Body</label>
+                        <label for="post_body">Deskripsi Event</label>
                         <textarea name="body" class="form-control txteditor" id="post_body" placeholder="Body" rows="10"><?php echo set_value('body');?></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="post_status">Featured Image</label>
+                        <label for="post_status">Poster Event</label>
                         <input type="hidden" name="featured_image" value="<?php echo set_value('featured_image');?>" id="featured_image">
                         <div class="preview_featured_image"></div>
                         <div class="set_featured_image">
-                            <a type="button" style="cursor:pointer" class="btnShowAssets" data-toggle="modal" data-target="#assetsModal">Set Featured Image</a>
+                            <a type="button" style="cursor:pointer" class="btnShowAssets" data-toggle="modal" data-target="#assetsModal">Upload Poster Event</a>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="post_name">Publish Date</label>
+                        <label for="post_name">Tanggal Event</label>
                         <input type="text" name="published_at" class="form-control datepicker" data-date-format="yyyy-mm-dd" id="publish_date" placeholder="Publish Date" value="<?php echo set_value('published_at');?>">
                     </div>
-                    
+                    <?php if($this->ion_auth->is_admin()):?>
                     <div class="form-group">
                         <label for="post_status">Status</label>
                         <?php
                             echo form_dropdown('status',$post_status,set_value('status'),array('class' => 'form-control'));
                         ?>
                     </div>
-                   
+                    <?php endif;?>
                     <div class="form-group">
-                        <label for="post_status">Categories</label>
+                        <label for="post_status">Kategori Event</label>
                         <?php
                             echo form_dropdown('category[]',$categories,null,array('class' => 'select2 form-control','multiple' => true));
                         ?>
                     </div>
 
-                    <div class="form-group">
+                  <div class="form-group">
                         <label for="post_status">Tags</label>
                         <?php
                             echo form_dropdown('tag[]',$tags,null,array('class' => 'select2-tags form-control','multiple' => true));
@@ -54,8 +54,8 @@
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button> 
-                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Back</button>
+                    <button type="submit" class="btn btn-primary">Buat Event</button> 
+                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Kembali</button>
                 </div>
             </form>
         </div><!-- /.box -->

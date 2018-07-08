@@ -2,14 +2,14 @@
 	<div class="col-md-12">
 		<div class="box">
             <div class="box-header">
-                <h3 class="box-title">Users</h3>
+                <h3 class="box-title">Pengguna</h3>
             </div><!-- /.box-header -->
             <div class="box-body">
             	<?php echo $this->session->flashdata('message');?>
-            	<p><a class="btn btn-default" href="<?php echo site_url('admin/users/add')?>">New User</a></p>
+            	<p><a class="btn btn-default" href="<?php echo site_url('admin/users/add')?>">Buat Akun</a></p>
                 <table class="table table-bordered">
                     <tr>
-                        <th style="width: 10px">#</th>
+                        
                         <th>Username</th>
                         <th>Email</th>
                         <th>First Name</th>
@@ -21,7 +21,7 @@
                     <?php if(!empty($users)):?>
                     	<?php foreach($users as $user):?>
 		                    <tr>
-		                        <td><?php echo $user['id']?></td>
+		                     
 		                        <td><?php echo $user['username']?></td>
 		                        <td><?php echo $user['email']?></td>
                                 <td><?php echo $user['first_name']?></td>

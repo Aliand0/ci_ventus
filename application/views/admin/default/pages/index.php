@@ -2,16 +2,16 @@
 	<div class="col-md-12">
 		<div class="box">
             <div class="box-header">
-                <h3 class="box-title">Pages</h3>
+                <h3 class="box-title">Halaman</h3>
             </div><!-- /.box-header -->
             <div class="box-body">
             	<?php echo $this->session->flashdata('message');?>
-            	<p><a class="btn btn-default" href="<?php echo site_url('admin/pages/add')?>">New page</a></p>
+            	<p><a class="btn btn-default" href="<?php echo site_url('admin/pages/add')?>">Buat Halaman</a></p>
                 <table class="table table-bordered">
                     <tr>
-                        <th style="width: 10px">#</th>
-                        <th>Title</th>
-                        <th>Slug</th>
+                    
+                        <th>Judul</th>
+                        
                         <th>Published</th>
                         <th>Author</th>
                         <th>Status</th>
@@ -20,9 +20,9 @@
                     <?php if(!empty($pages)):?>
                     	<?php foreach($pages as $page):?>
 		                    <tr>
-		                        <td><?php echo $page['id']?></td>
+		                      
 		                        <td><?php echo $page['title']?></td>
-		                        <td><?php echo $page['slug']?></td>
+		                       
                                 <td><?php echo $page['published_at']?></td>
                                 <td><?php echo $page['username']?></td>
 		                        <td><?php echo $post_status[$page['status']]?></td>

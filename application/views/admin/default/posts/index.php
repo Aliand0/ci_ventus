@@ -6,12 +6,12 @@
             </div><!-- /.box-header -->
             <div class="box-body">
             	<?php echo $this->session->flashdata('message');?>
-            	<p><a class="btn btn-default" href="<?php echo site_url('admin/posts/add')?>">New post</a></p>
+            	<p><a class="btn btn-default" href="<?php echo site_url('admin/posts/add')?>">Buat Baru</a></p>
                 <table class="table table-bordered">
                     <tr>
-                        <th style="width: 10px">#</th>
+                        
                         <th>Title</th>
-                        <th>Slug</th>
+                        
                         <th>Published</th>
                         <th>Author</th>
                         <th>Status</th>
@@ -20,9 +20,9 @@
                     <?php if(!empty($posts)):?>
                     	<?php foreach($posts as $post):?>
 		                    <tr>
-		                        <td><?php echo $post['id']?></td>
+		                        
 		                        <td><?php echo $post['title']?></td>
-		                        <td><?php echo $post['slug']?></td>
+		                        
                                 <td><?php echo $post['published_at']?></td>
                                 <td><?php echo $post['username']?></td>
 		                        <td><?php echo $post_status[$post['status']]?></td>

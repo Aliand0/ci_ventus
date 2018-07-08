@@ -3,7 +3,7 @@
 		 <!-- general form elements -->
         <div class="box box-primary">
             <div class="box-header">
-                <h3 class="box-title">Edit Group</h3>
+                <h3 class="box-title">Edit Grup</h3>
             </div><!-- /.box-header -->
             <!-- form start -->
             <form role="form" action="<?php echo site_url('admin/groups/edit')?>" method="post">
@@ -22,8 +22,8 @@
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button> 
-                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Back</button>
+                    <button type="submit" class="btn btn-primary">Edit Grup</button> 
+                    <button type="button" class="btn btn-default" onclick="javascript:history.back()">Kembali</button>
                 </div>
             </form>
         </div><!-- /.box -->

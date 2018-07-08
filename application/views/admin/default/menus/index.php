@@ -2,11 +2,11 @@
     <div class="col-md-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">Menus</h3>
+                <h3 class="box-title">Menu</h3>
             </div><!-- /.box-header -->
             <div class="box-body">
                <?php echo $this->session->flashdata('message');?>
-                <p><a class="btn btn-default" href="<?php echo site_url('admin/menus/add')?>">New menu</a></p>
+                <p><a class="btn btn-default" href="<?php echo site_url('admin/menus/add')?>">Buat Menu</a></p>
                 <table class="table table-bordered">
                     <tr>
                         <th>Name</th>
